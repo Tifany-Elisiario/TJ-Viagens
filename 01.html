@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TJ Destinos &#x2600;</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="sobrenos.html" target="_self"> &#x2764;&#xFE0F;Sobre Nós</a>
+        <a href="viagensagendadas.html" target="_self"> &#9992;&#65039;Viagens Agendadas</a>
+        <a href="memorias.html" target="_self"> &#128248;Memórias</a>
+        <a href="bonus.html" target="_self">&#127873;&#65039;Bônus</a>
+        <a href="curiosidades.html" target="_self">&#128161;&#65039;Curiosidades</a>
+
+    </nav>
+
+    <div class="imgprincipal">
+        <img src="imagens/slogan.png" width="1920" height="600" alt="foto.jpg" class="imagemprincipal">
+    </div>
+
+    <div id="introducao">
+        <div class="textointroducao">
+            <h1>TJ Destinos &#x2600;</h1>
+            <h2>Essa é a sua mais nova agência de viagens!</h2>
+            <p>Criei este site especialmente para registrar todos os lugares que quero muito conhecer com você, porque,
+                desde que começamos a conversar, temos uma lista de destinos que dissemos que iríamos conhecer.</p>
+            <p>Te desejo boa sorte e paciência para finalizar a leitura da página principal e das outras telas!</p>
+
+        </div>
+    </div>
+
+    <main>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Diamantina</h2>
+                <p>É um destino 'simples' e teoricamente perto, mas aposto que você está lendo e pensando: Diamantina?
+                    Sim, pode confiar. Provavelmente você já foi lá, mas duvido que, além de explorar a cidade (que
+                    parece um cenário de novela antiga), tenha visitado as cachoeiras, que são as mais lindas que já vi.
+                    Há também a Vila Biribiri, com uma imensa população de 3 habitantes (quase uma vila fantasma), mas é
+                    um lugar super agradável e que vale a pena conhecer.
+                </p>
+            </div>
+            <!-- começa criando uma div pro carrosel -->
+            <div class="carrossel">
+                <!-- e dentro da div do carrosel cria outra div para colocar as imagens -->
+                <div class="imagens">
+                    <!-- primeira imagem, e especifíca onde essa imagem está no src="caminho da imagem" -->
+                    <img src="imagens/1.png" alt="cidade de Diamantina">
+                    <!-- segunda imagem, e especifíca onde essa imagem está no src="caminho da imagem" -->
+                    <img src="imagens/2.png" alt="cidade de Diamantina">
+                    <!-- terceira imagem, e especifíca onde essa imagem está no src="caminho da imagem" -->
+                    <img src="imagens/3.png" alt="Imagem 12">
+                </div>
+                <!-- botão pra voltar uma imagem -->
+                <!-- essa parte ( onclick="mudarImagem(-1)  ) está chamando uma função do javascript pra voltar uma imagem-->
+                <button class="prev" onclick="mudarImagem(-1)">&#10094;</button>
+                <!-- botão pra avançar uma imagem -->
+                <!-- essa parte ( onclick="mudarImagem(1)  ) está chamando uma função do javascript pra avançar uma imagem-->
+                <button class="next" onclick="mudarImagem(1)">&#10095;</button>
+
+            </div>
+        </div>
+
+        <!-- onde fica o código JAVASCRIPT-->
+        <script src="script.js"></script>
+
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Januária</h2>
+                <p>Essa cidade não é o foco e sim o<strong> Parque Nacional Cavernas do Peruaçu</strong>. Esse parque é
+                    imenso e
+                    abrange mais duas cidades, além de Januária: Itacarambi e São João das Missões. Vamos explorar
+                    muitas
+                    cavernas e admirar várias paisagens. Só adianto que sou sedentária e tenho certa dificuldade para
+                    manter o
+                    ritmo nas trilhas, então você precisa ser paciente; e nada de tomar uma latinha de red bull com
+                    Dorflex para
+                    ganhar fôlego e me deixar para trás, tô de olho! </p>
+            </div>
+
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/4.png" alt="cidade de Januária">
+                    <img src="imagens/5.png" alt="cidade de Januária">
+                    <img src="imagens/6.png" alt="cidade de Januária">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Porto Seguro</h2>
+                <p>Acho que você já foi umas 500 vezes, mas eu prefiro considerar que eu não fui kkkkkkkk. Mas pense
+                    pelo lado positivo: se você for comigo, vai presenciar um fenômeno natural (enchente). Espero muito
+                    que dessa vez não tenha outro dilúvio. Selecionei esse destino porque morro de vontade de voltar lá
+                    e também quero muito ir ao parque aquático na cidade vizinha. Como é um lugar bem popular, me sinto
+                    à vontade, e por isso escolhi essa cidade litorânea.
+                </p>
+            </div>
+
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/7.png" alt="cidade de Porto Seguro">
+                    <img src="imagens/8.png" alt="cidade de Porto Seguro">
+                    <img src="imagens/9.png" alt="cidade de Porto Seguro">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>São Thomé das Letras</h2>
+                <p>Esse você já foi, mas não foi comigo, então não conta kkkkk. Brincadeiras à parte, resolvi colocar
+                    esse destino porque, além daquele festival super atrativo, há várias belezas naturais incríveis que
+                    acho que você não conheceu (não me lembro de você ter comentado). Então, vamos juntar o útil ao
+                    agradável: você volta para explorar esses lugares, e eu vou pela primeira vez, com a melhor
+                    companhia que poderia ter. Quando formos a esse destino, vamos pegar um portal mágico e já riscar
+                    outro lugar dessa lista. Se você entendeu a referência, já sabe um dos próximos destinos.</p>
+            </div>
+
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/10.png" alt="cidade de São Thomé das Letras">
+                    <img src="imagens/11.png" alt="cidade de São Thomé das Letras">
+                    <img src="imagens/12.png" alt="cidade de São Thomé das Letras">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Rio de Janeiro</h2>
+                <p>O Rio de Janeiro continua lindo, e eu preciso presenciar a beleza dessa cidade com os meus próprios
+                    olhos. Existe a possibilidade de levarmos um tiro de fuzil? Claro que sim, mas o que realmente me
+                    mata é pensar em conhecer essa cidade sem você (gastei todo o meu repertório de cantadas agora).
+                    Então, espero que você aguente firme e não desista de mim. Já adianto que, quando formos, vamos
+                    pular de paraquedas, então prepare o psicológico.
+                </p>
+            </div>
+
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/13.png" alt="cidade Rio de Janeiro">
+                    <img src="imagens/14.png" alt="cidade Rio de Janeiro">
+                    <img src="imagens/15.png" alt="cidade Rio de Janeiro">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Lençóis Maranhenses</h2>
+                <p>Acho esse lugar foda pra caralho, espero que você goste também! É o único lugar no mundo que possui
+                    essas características, desde a primeira vez que ouvi falar dos lençóis maranhenses me apaixonei e
+                    nunca mais esqueci, não sei muitas coisas sobre esse destino, só sei vamos conhecer juntos.
+                </p>
+            </div>
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/16.png" alt="Lençóis Maranhenses">
+                    <img src="imagens/17.png" alt="Lençóis Maranhenses">
+                    <img src="imagens/18.png" alt="Lençóis Maranhenses">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Cuba</h2>
+                <p>Esse destino está na lista porque você mencionou que tem muita vontade de conhecê-lo, e desde que
+                    disse "sim" para você, os seus sonhos também se tornaram os meus. Podemos explorar Havana, visitando
+                    os pontos turísticos da capital, e depois seguir para Varadero para aproveitar as praias.</p>
+            </div>
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/19.png" alt="cidade de cuba">
+                    <img src="imagens/20.png" alt="cidade de cuba">
+                    <img src="imagens/21.png" alt="cidade de cuba">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Machu Picchu</h2>
+                <p>Finalmente chegamos a Machu Picchu! Acho que já deu para perceber que gosto de conhecer lugares que
+                    carregam histórias que considero interessantes. Não sei se esses destinos são muito a sua vibe, mas
+                    eu os acho incríveis. Além de ser um lugar cheio de histórias e lendas, Machu Picchu oferece uma
+                    paisagem com muitas montanhas. Também pretendo visitar a Montanha Arco-Íris, mas, para conseguir
+                    fazer tudo isso, preciso preparar o físico. O Peru não é para amadores (eu sei, essa frase ficou
+                    tosca).
+                </p>
+            </div>
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/22.png" alt="Machu Picchu">
+                    <img src="imagens/23.png" alt="Machu Picchu">
+                    <img src="imagens/24.png" alt="Machu Picchu">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Gizé</h2>
+                <P>É a famosa cidade do Egito onde ficam as pirâmides, mais um lugar que tenho certeza de que você não
+                    vai achar interessante, mas essa é a viagem internacional que mais quero fazer kkkkk. Nesse destino,
+                    você realmente precisa ir comigo e ser meu fiel escudeiro. Digo isso porque lá as mulheres são muito
+                    assediadas, então espero que você não faça negócio com os homens de lá e me troque por um camelo
+                    kkkkk. Também espero que você não seja claustrofóbico, pois vamos entrar em todas aquelas pirâmides,
+                    quem sabe encontramos um tesouro perdido?! Vale a pena conhecer.
+                </P>
+            </div>
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/25.png" alt="cidade de Gizé">
+                    <img src="imagens/26.png" alt="cidade de Gizé">
+                    <img src="imagens/27.png" alt="cidade de Gizé">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+        <div class="secao">
+            <div class="texto">
+                <h2>Curaçao</h2>
+                <p>Acho esse destino a sua cara, vejo as fotos me vem aquela música do Manu Chão na cabeça (me gustas
+                    tu) e me vem outras idéias também que combinam muito com essa ilha. Lá é um lugar onde a cultura
+                    holandesa é muito forte devido a colonização, mas essa ilha fica no Caribe, mas o que realmente
+                    importa são as águas cristalinas desse lugar, tenho certeza de que vamos curtir muito e espero que,
+                    até lá, Deus nos dê saúde para fugir do agiota, porque, para visitar todos esses lugares, vamos
+                    precisar de um ou de vários!</p>
+            </div>
+            <!-- Carrossel para o segundo destino -->
+            <div class="carrossel">
+                <div class="imagens">
+                    <img src="imagens/28.png" alt="cidade de Curaçao">
+                    <img src="imagens/29.png" alt="cidade de Curaçao">
+                    <img src="imagens/30.png" alt="cidade de Curaçao">
+                </div>
+                <button class="prev" onclick="mudarImagem(this, -1)">&#10094;</button>
+                <button class="next" onclick="mudarImagem(this, 1)">&#10095;</button>
+            </div>
+        </div>
+
+    </main>
+
+    <div id="conclusao">
+        <div class="final">
+            <p>
+                Depois de meses de muita enrolação, dor de cabeça e mil mudanças, finalmente cheguei à versão final do
+                site.
+                Se ganharmos na Mega, já tenho em mente mais uns 20 lugares para a gente ir – vamos precisar aumentar a
+                lista de destinos, hein!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Criado por Tifany Elisiario para João Emanuel
+        </p>
+    </footer>
+
+
+
+</body>
+
+</html>
